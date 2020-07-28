@@ -72,11 +72,11 @@ end:
 * = $4000
 main:        
 		lda $d011 	// switch to bitmap
-		and #%10011111
+		and #%10011000
 		sta $d011
 
 		lda $d016 	// switch to multicolor
-		ora #%11101111
+		ora #%11101000
 		sta $d016
 
 			   // Set Background and Border Colors
